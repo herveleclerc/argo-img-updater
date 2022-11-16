@@ -1,0 +1,18 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: update-image-poc
+  namespace: argocd
+spec:
+  destination:
+    namespace: image-upd-poc
+    server: https://kubernetes.default.svc
+  project: default
+  source:
+    path: k8s/overlays/prod
+    repoURL: https://github.com/herveleclerc/argo-img-updater.git
+    targetRevision: main
+  syncPolicy:
+    syncOptions:
+    - CreateNamespace=true
+    - PrunePropagationPolicy=foreground
