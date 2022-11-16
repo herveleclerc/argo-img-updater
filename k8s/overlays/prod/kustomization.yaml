@@ -10,5 +10,5 @@ resources:
 - ../../base
 images:
 - name: nginx
-  newName: "nginx"
-  newTag: "1.23"
+  newName: "herveleclerc/nginx"
+  newTag: "1.23-amd"
