@@ -10,4 +10,5 @@ resources:
 - ../../base
 images:
 - name: nginx
-  newName: "1.23"
+  newName: "nginx"
+  newTag: "1.23"
