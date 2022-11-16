@@ -11,4 +11,4 @@ resources:
 images:
 - name: nginx
   newName: "herveleclerc/nginx"
-  newTag: "1.23-amd"
+  newTag: "1.19.9"
