@@ -11,5 +11,3 @@ images:
 - name: nginx
   newName: "herveleclerc/nginx"
   newTag: "1.19.9"
-- name: herveleclerc/nginx
-  newTag: 1.19.9
