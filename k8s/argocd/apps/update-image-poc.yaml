@@ -18,6 +18,9 @@ spec:
     repoURL: https://github.com/herveleclerc/argo-img-updater.git
     targetRevision: main
   syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
     syncOptions:
     - CreateNamespace=true
     - PrunePropagationPolicy=foreground
